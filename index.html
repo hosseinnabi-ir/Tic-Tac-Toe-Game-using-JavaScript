@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>CODE WITH HOSSEIN</title>
+
+    <!-- DynaPuff Font -->
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Player Selection -->
+    <div class="selection">
+        <h2>Tic Tac Toe</h2>
+        <p>Select Your Player</p>
+        <div class="players">
+            <button
+                class="player"
+                onClick="playerSelect('X')"
+            >
+                X
+            </button>
+            <button
+                class="player"
+                onClick="playerSelect('O')"
+            >
+                O
+            </button>
+        </div>
+    </div>
+
+    <!-- Playing Board -->
+    <div class="play-board">
+        <table>
+            <tr>
+                <td class="cell" id="0"></td>
+                <td class="cell" id="1"></td>
+                <td class="cell" id="2"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="3"></td>
+                <td class="cell" id="4"></td>
+                <td class="cell" id="5"></td>
+            </tr>
+            <tr>
+                <td class="cell" id="6"></td>
+                <td class="cell" id="7"></td>
+                <td class="cell" id="8"></td>
+            </tr>
+        </table>
+
+        <!-- Reset Button -->
+        <button class="reset" onclick="startGame()">Reset</button>
+
+    </div>
+
+    <!-- Winner Declaration -->
+    <div class="winner">
+
+        <h3></h3>
+
+        <!-- Reset Button -->
+        <button class="reset" onclick="startGame()">Play Again</button>
+
+    </div>
+
+    <!-- JS File -->
+    <script src="js/script.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
